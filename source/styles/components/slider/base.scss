@@ -1,53 +1,75 @@
 .slider {
     display: flex;
+    position: relative;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
-    height: 757px; /* meybe delete this */
+    height: 757px;
     margin-top: 103px;
     background-color: #292929;
     color: #FFFFFF;
     text-align: center;
 
-    a {
-        margin: 0 39px;
-        transform: translate(0, -60px);
-    }
+    .container {
 
-    .slider-content {
+        .side-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-200%);
 
-        h2 {
-            transform: translate(11px, -21px);
-            font-family: 'Raleway', sans-serif;
-            font-size: 62px;
-            font-weight: 100;
+            &.left {
+                left: 39px;
+            }
+
+            &.right {
+                right: 39px;
+            }
         }
 
-        h1 {
-            position: relative;
-            top: -15px;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 74px;
-            font-weight: 700;
-        }
+        .slider-content {
 
-        p {
-            font-family: 'Raleway', sans-serif;
-            font-size: 20px;
-            font-weight: 300;
-        }
+            h2 {
+                transform: translate(11px, -19px);
+                font-family: 'Raleway', sans-serif;
+                font-size: 62px;
+                font-weight: 100;
+            }
 
-        a {
-            display: inline-block;
-            margin: 0; /* maybe edit this, not 0 */
-            margin-top: 43px;
-            padding: 9px 31px;
-            transform: translate(11px, 0);
-            border: 1px solid #FFFFFF;
-            outline: 3px solid #3AB6B2;
-            background-color: #3AB6B2;
-            color: #FFFFFF;
-            text-decoration: none;
+            h1 {
+                position: relative;
+                top: -15px;
+                transform: translate(2px, 0);
+                font-family: 'Montserrat', sans-serif;
+                font-size: 74px;
+                font-weight: 700;
+                letter-spacing: -3px;
+            }
+
+            p {
+                transform: translate(9px, -1px);
+                font-family: 'Raleway', sans-serif;
+                font-size: 20px;
+                font-weight: 300;
+                letter-spacing: -.2px;
+                word-spacing: .9px;
+            }
+
+            a {
+                display: inline-block;
+                margin: 0;
+                margin-top: 43px;
+                padding: 12px 30px;
+                transform: translate(12px, 0);
+                border: 1px solid #FFFFFF;
+                outline: 3px solid #3AB6B2;
+                background-color: #3AB6B2;
+                color: #FFFFFF;
+                font-family: 'Raleway', sans-serif;
+                font-size: 13px;
+                font-weight: 700;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
         }
     }
 }

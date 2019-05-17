@@ -1,12 +1,42 @@
-.container {
-    width: calc(100% - 40px);
-    padding: 0 20px;
-}
-
 .slider {
     justify-content: space-around;
+    height: 213px;
+    margin-top: 66px;
 
-    .side-nav {
-        display: none;
+    .container {
+        width: calc(100% - 40px);
+        padding: 0 20px;
+
+        .side-nav {
+            display: none;
+        }
+
+        .slider-content {
+
+            h2 {
+                transform: translate(-1px, -10px);
+                font-size: 25px;
+            }
+
+            h1 {
+                transform: translate(-5px, 7px);
+                font-size: 29px;
+                letter-spacing: -1px;
+            }
+
+            p {
+                overflow: hidden;
+                transform: translate(4px, -1px);
+                font-size: 9px;
+                white-space: nowrap;
+            }
+
+            a {
+                margin-top: 17px;
+                padding: 3px 8px;
+                transform: translate(-1px, 0);
+                font-size: 7px;
+            }
+        }
     }
 }

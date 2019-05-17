@@ -1,11 +1,38 @@
-.container {
-    max-width: 83%;
-}
-
 .slider {
     justify-content: space-around;
+    height: 597px;
 
-    .side-nav {
-        display: none;
+    .container {
+        max-width: 94%;
+
+        .side-nav {
+            display: none;
+        }
+
+        .slider-content {
+
+            h2 {
+                transform: translate(0, -23px);
+                font-size: 60px;
+                word-spacing: -3px;
+            }
+
+            h1 {
+                font-size: 70px;
+                letter-spacing: 0;
+                word-spacing: -6px;
+            }
+
+            p {
+                transform: translate(-5px, 0);
+                font-size: 19px;
+                font-weight: 200;
+                word-spacing: 1px;
+            }
+
+            a {
+                transform: translate(-3px, -4px);
+            }
+        }
     }
 }

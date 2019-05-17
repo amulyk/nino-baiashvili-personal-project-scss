@@ -14,7 +14,7 @@
             padding-left: 26px;
             float: left;
             transform: translateY(4px);
-            background-image: url(../../../images/Logo.svg);
+            background-image: url(/images/Logo.svg);
             background-repeat: no-repeat;
             background-position: 0 -2px;
             color: #FFFFFF;
@@ -59,7 +59,7 @@
                 display: block;
                 width: 30px;
                 height: 2px;
-                margin-bottom: 3px;
+                margin-bottom: 1px;
                 border-bottom: 2px solid #FFFFFF;
 
                 &:last-child {

@@ -1,7 +1,14 @@
 .header {
 
     .container {
-        max-width: 83%;
+        max-width: 94%;
+
+        .logo {
+            padding-left: 29px;
+            transform: translateY(0);
+            background-position: 2px 4px;
+            line-height: 58px;
+        }
 
         .nav {
             display: none;
@@ -9,6 +16,8 @@
 
         .burger {
             display: inline-block;
+            padding: 8px 10px 10px 10px;
+            transform: translate(-5px, 2px);
         }
     }
 }
