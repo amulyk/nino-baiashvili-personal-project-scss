@@ -1,0 +1,137 @@
+.about {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px; /* delete this */
+
+    .container {
+
+        h1 {
+            padding-top: 77px;
+            color: #323232;
+            font-family: 'Raleway', sans-serif;
+            font-size: 31px;
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase;
+
+            &::before {
+                content: '';
+                display: block;
+                position: relative;
+                z-index: 2;
+                top: 80px;
+                width: 50px;
+                height: 40px;
+                margin: 0 auto;
+                background-color: #FFFFFF;
+                background-image: url(../../../images/Speak-Icon.png);
+                background-repeat: no-repeat;
+                background-position: 10px 4px;
+                background-size: 30px;
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                position: relative;
+                top: 30px;
+                width: 20%;
+                margin: 0 auto;
+                border-bottom: 1px solid #D3D3D3;
+            }
+
+            span {
+                color: #3AB6B2;
+            }
+        }
+
+        .about-content {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 125px;
+
+            div:last-child {
+                padding-left: 90px;
+            }
+
+            img {
+                width: 508px;
+                height: 100%;
+            }
+
+            h2 {
+                color: #323232;
+                font-family: 'Raleway', sans-serif;
+                font-size: 31px;
+                font-weight: 600;
+                letter-spacing: -1px;
+                text-transform: uppercase;
+                word-spacing: 1px;
+            }
+
+            p {
+                padding-top: 25px;
+                color: #6A6A6A;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 26px;
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                padding-top: 50px;
+
+                li {
+                    position: relative;
+                    width: calc(50% - 100px);
+                    padding-bottom: 44px;
+                    padding-left: 92px;
+
+                    &::before {
+                        content: '';
+                        display: inline-block;
+                        position: absolute;
+                        top: -3px;
+                        left: 3px;
+                        width: 63px;
+                        height: 63px;
+                        border-radius: 50%;
+                        background-color: #3B3B3B;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: 24px;
+                    }
+
+                    $bgimgs: (1: 'settings',2: 'location',3: 'heart',4: 'new');
+
+                    @each $ind, $bgimg in $bgimgs {
+
+                        &:nth-child(#{$ind})::before {
+                            background-image: url('/images/#{$bgimg}.png');
+                        }
+                    }
+
+                    h4 {
+                        color: #323232;
+                        font-family: 'Raleway', sans-serif;
+                        font-size: 18px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        word-spacing: -2px;
+                    }
+
+                    p {
+                        padding-top: 10px;
+                        line-height: 22px;
+                    }
+                }
+            }
+
+            a {
+                display: none;
+            }
+        }
+    }
+}

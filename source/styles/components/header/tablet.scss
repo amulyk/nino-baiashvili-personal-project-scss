@@ -1,3 +1,14 @@
 .header {
-    background: green;
+
+    .container {
+        max-width: 83%;
+
+        .nav {
+            display: none;
+        }
+
+        .burger {
+            display: inline-block;
+        }
+    }
 }

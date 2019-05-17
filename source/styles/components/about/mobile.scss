@@ -1,0 +1,81 @@
+.container {
+    width: calc(100% - 40px);
+    padding: 0 20px;
+}
+
+.about {
+
+    .about-content {
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        div {
+            padding: 25px 20px 0 20px;
+
+            h2 {
+                padding-bottom: 16px;
+                border-bottom: 1px solid #E6E6E6;
+            }
+
+            a {
+                display: inline-block;
+                padding: 13px 29px;
+                background-color: #3AB6B2;
+                color: #FFFFFF;
+                font-family: 'Raleway', sans-serif;
+                font-size: 13px;
+                font-weight: 700;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            &:first-child {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                padding-top: 0;
+            }
+
+            &:last-child {
+                padding: 25px 20px 0 20px;
+            }
+        }
+
+        ul {
+            flex-direction: column;
+
+            li {
+                width: calc(100% - 80px);
+                padding-left: 30px;
+
+                &::before {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 0;
+                    background-color: transparent;
+                }
+
+                &:first-child::before,
+                &:nth-child(2)::before,
+                &:nth-child(3)::before,
+                &:last-child::before {
+                    background-image: url(../../../images/Check-Icon.png);
+                    background-position: 0;
+                    background-size: 16px;
+                }
+
+                &:last-child {
+                    display: none;
+                }
+
+                h4 {
+                    display: none;
+                }
+
+                p {
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+}
