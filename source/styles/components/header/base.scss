@@ -6,7 +6,7 @@
     justify-content: space-around;
     width: 100%;
     padding: 25px 0;
-    background: #000000;
+    background: $color-8;
 
     .container {
 
@@ -14,10 +14,10 @@
             padding-left: 26px;
             float: left;
             transform: translateY(4px);
-            background-image: url(/images/Logo.svg);
+            background-image: url(/images/logo.svg);
             background-repeat: no-repeat;
             background-position: 0 -2px;
-            color: #FFFFFF;
+            color: $color-1;
             font-family: 'Raleway', sans-serif;
             font-size: 36px;
             font-weight: 300;
@@ -33,7 +33,7 @@
 
             a {
                 margin-right: 42px;
-                color: #FFFFFF;
+                color: $color-1;
                 font-family: 'Open Sans', sans-serif;
                 font-size: 14px;
                 font-weight: 300;
@@ -51,16 +51,16 @@
             margin: 10px 0;
             padding: 10px;
             float: right;
-            border: 1px solid #FFFFFF;
-            outline: 2px solid #3AB6B2;
-            background-color: #3AB6B2;
+            border: 1px solid $color-1;
+            outline: 2px solid $color-4;
+            background-color: $color-4;
 
             span {
                 display: block;
                 width: 30px;
                 height: 2px;
                 margin-bottom: 1px;
-                border-bottom: 2px solid #FFFFFF;
+                border-bottom: 2px solid $color-1;
 
                 &:last-child {
                     padding-bottom: 0;

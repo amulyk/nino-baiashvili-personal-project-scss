@@ -9,7 +9,7 @@
             font-size: 27px;
         }
 
-        .about-content {
+        .content-main {
             flex-wrap: wrap;
             justify-content: space-around;
             padding-top: 64px;
@@ -24,7 +24,7 @@
 
                 h2 {
                     padding-bottom: 12px;
-                    border-bottom: 1px solid #E6E6E6;
+                    border-bottom: 1px solid $color-7;
                     font-size: 16px;
                     word-spacing: 3px;
                 }
@@ -43,8 +43,8 @@
                     display: inline-block;
                     margin-left: 0;
                     padding: 14px 31px;
-                    background-color: #3AB6B2;
-                    color: #FFFFFF;
+                    background-color: $color-4;
+                    color: $color-1;
                     font-family: 'Raleway', sans-serif;
                     font-size: 13px;
                     font-weight: 700;

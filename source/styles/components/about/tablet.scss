@@ -8,7 +8,7 @@
             font-size: 28px;
         }
 
-        .about-content {
+        .content-main {
             flex-wrap: wrap;
             justify-content: space-around;
 
@@ -34,7 +34,7 @@
 
                 h2 {
                     padding-bottom: 16px;
-                    border-bottom: 1px solid #E6E6E6;
+                    border-bottom: 1px solid $color-7;
                     font-size: 26px;
                     word-spacing: -1px;
                 }
@@ -68,7 +68,7 @@
                         &:nth-child(2)::before,
                         &:nth-child(3)::before,
                         &:last-child::before {
-                            background-image: url(/images/Check-Icon.png);
+                            background-image: url(/images/check-icon.png);
                             background-position: 0;
                             background-size: 16px;
                         }

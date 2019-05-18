@@ -7,7 +7,7 @@
         h1 {
             position: relative;
             padding-top: 117px;
-            color: #323232;
+            color: $color-2;
             font-family: 'Raleway', sans-serif;
             font-size: 31px;
             font-weight: 600;
@@ -25,8 +25,8 @@
                 height: 40px;
                 margin: 0 auto;
                 transform: translateX(-51%);
-                background-color: #FFFFFF;
-                background-image: url(../../../images/Speak-Icon.png);
+                background-color: $color-1;
+                background-image: url(/images/speak-icon.png);
                 background-repeat: no-repeat;
                 background-position: 7px 12px;
                 background-size: 17px;
@@ -41,15 +41,15 @@
                 width: 107px;
                 margin: 0 auto;
                 transform: translateX(-51%);
-                border-bottom: 1px solid #D3D3D3;
+                border-bottom: 1px solid $color-3;
             }
 
             span {
-                color: #3AB6B2;
+                color: $color-4;
             }
         }
 
-        .about-content {
+        .content-main {
             display: flex;
             justify-content: space-between;
             padding-top: 125px;
@@ -58,7 +58,7 @@
                 width: 100%;
 
                 &:last-child {
-                    padding-left: 90px;
+                    padding-left: 17px;
                 }
 
                 img {
@@ -68,7 +68,7 @@
                 }
 
                 h2 {
-                    color: #323232;
+                    color: $color-2;
                     font-family: 'Raleway', sans-serif;
                     font-size: 31px;
                     font-weight: 600;
@@ -79,7 +79,7 @@
 
                 p {
                     padding-top: 25px;
-                    color: #6A6A6A;
+                    color: $color-5;
                     font-family: 'Open Sans', sans-serif;
                     font-size: 14px;
                     font-weight: 400;
@@ -91,8 +91,8 @@
                     margin-top: 23px;
                     margin-left: 2px;
                     padding: 14px 28px;
-                    background-color: #3AB6B2;
-                    color: #FFFFFF;
+                    background-color: $color-4;
+                    color: $color-1;
                     font-family: 'Raleway', sans-serif;
                     font-size: 14px;
                     font-weight: 700;
@@ -108,7 +108,7 @@
 
                     li {
                         position: relative;
-                        width: calc(50% - 114px);
+                        width: calc(50% - 20px);
                         margin-bottom: 34px;
                         padding-left: 92px;
 
@@ -121,7 +121,7 @@
                             width: 63px;
                             height: 63px;
                             border-radius: 50%;
-                            background-color: #3B3B3B;
+                            background-color: $color-6;
                             background-repeat: no-repeat;
                             background-position: center;
                             background-size: 20px;
@@ -137,7 +137,7 @@
                         }
 
                         h4 {
-                            color: #323232;
+                            color: $color-2;
                             font-family: 'Raleway', sans-serif;
                             font-size: 18px;
                             font-weight: 700;
